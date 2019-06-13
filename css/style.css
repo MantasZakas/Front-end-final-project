@@ -1,0 +1,39 @@
+header * {
+  color: grey; }
+
+header div {
+  font-size: 10px; }
+  header div button {
+    background-color: transparent;
+    border: none; }
+
+header form div {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px; }
+  header form div i {
+    color: #1ccdca; }
+
+.container {
+  max-width: 1000px;
+  padding: 0; }
+
+#shopping_cart {
+  height: 30px;
+  width: 30px; }
+  #shopping_cart i {
+    color: grey; }
+
+#slider1 {
+  background-color: darkslategrey;
+  color: white;
+  height: 80vh; }
+
+#title_banner {
+  background-color: black; }
+  #title_banner h1 {
+    color: white;
+    font-size: 20px; }
+  #title_banner p {
+    color: gray;
+    font-size: 16px; }

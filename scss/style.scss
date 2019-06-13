@@ -1,0 +1,59 @@
+header {
+  * {
+    color: grey;  //TODO make variable
+  }
+  div {
+    font-size: 10px;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  form {
+    div {
+      width: 150px;
+      height: 30px;
+      border-radius: 15px;
+      i {
+        color: #1ccdca; //TODO make variable
+      }
+    }
+  }
+}
+
+//Bootstrap class modification BEGIN
+
+.container {
+  max-width: 1000px;
+  padding: 0;
+}
+
+//Bootstrap modification End
+
+#shopping_cart {
+  height: 30px;
+  width: 30px;
+  i {
+    color: grey;
+  }
+}
+
+#slider1 {
+  background-color: darkslategrey;
+  color: white;
+  height: 80vh;
+}
+
+#title_banner {
+  background-color: black;
+
+  h1 {
+    color: white;
+    font-size: 20px;
+  }
+  p {
+    color: gray;
+    font-size: 16px;
+  }
+}
