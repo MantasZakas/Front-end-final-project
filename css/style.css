@@ -38,6 +38,9 @@ p, a, li {
 .card-header {
   cursor: pointer; }
 
+.tab-content, .card-header {
+  background-color: white; }
+
 #shopping_cart {
   height: 30px;
   width: 30px; }
@@ -48,6 +51,9 @@ p, a, li {
   background-color: darkslategrey;
   color: white;
   height: 80vh; }
+
+#slider2 {
+  height: 60vh; }
 
 #title_banner {
   background-color: #1B2228; }
@@ -69,6 +75,16 @@ p, a, li {
   background-color: #1B2228;
   background-image: url("../images/bg_header4.jpg");
   background-size: cover; }
+
+#counter_section i {
+  font-size: 30px;
+  color: #1ccdca; }
+
+#counter_section h2 {
+  color: #666666; }
+
+#counter_section p {
+  font-size: 20px; }
 
 .round-icon {
   height: 70px;
@@ -96,3 +112,8 @@ p, a, li {
   background-color: #e74c3c;
   margin: 5px;
   padding: 3px; }
+
+.background-grey {
+  background-color: #f9fafc;
+  border: solid #eaebed;
+  border-width: 1px 0; }
