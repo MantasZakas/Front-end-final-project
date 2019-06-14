@@ -1,4 +1,7 @@
-header * {
+* {
+  color: grey; }
+
+header a {
   color: grey; }
 
 header div {
@@ -14,9 +17,26 @@ header form div {
   header form div i {
     color: #1ccdca; }
 
+h3 {
+  font-size: 20px;
+  color: black; }
+
+h4 {
+  font-size: 14px; }
+
+p, a, li {
+  font-size: 12px; }
+
 .container {
   max-width: 1000px;
   padding: 0; }
+
+.progress {
+  height: 25px;
+  background-color: #2a3136; }
+
+.card-header {
+  cursor: pointer; }
 
 #shopping_cart {
   height: 30px;
@@ -30,10 +50,49 @@ header form div {
   height: 80vh; }
 
 #title_banner {
-  background-color: black; }
+  background-color: #1B2228; }
   #title_banner h1 {
     color: white;
     font-size: 20px; }
   #title_banner p {
-    color: gray;
     font-size: 16px; }
+
+#progress_bar_container {
+  background-color: #3C464D; }
+  #progress_bar_container h2 {
+    color: white;
+    font-size: 25px; }
+  #progress_bar_container p {
+    color: lightgray; }
+
+#progress_bar_image {
+  background-color: #1B2228;
+  background-image: url("../images/bg_header4.jpg");
+  background-size: cover; }
+
+.round-icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: solid 1px #1ccdca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1ccdca;
+  font-size: 30px; }
+  .round-icon i {
+    color: #1ccdca; }
+
+.arrow-list li {
+  padding-bottom: 5px; }
+
+.arrow-list li:before {
+  content: "\f061";
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  font-size: 10px;
+  color: white;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  margin: 5px;
+  padding: 3px; }
