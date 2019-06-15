@@ -28,8 +28,7 @@ p, a, li {
   font-size: 12px; }
 
 .container {
-  max-width: 1000px;
-  padding: 0; }
+  max-width: 1000px; }
 
 .progress {
   height: 25px;
@@ -40,12 +39,6 @@ p, a, li {
 
 .tab-content, .card-header {
   background-color: white; }
-
-#shopping_cart {
-  height: 30px;
-  width: 30px; }
-  #shopping_cart i {
-    color: grey; }
 
 #slider1 {
   background-color: darkslategrey;
@@ -86,6 +79,18 @@ p, a, li {
 #counter_section p {
   font-size: 20px; }
 
+.small-round-button {
+  height: 30px;
+  width: 30px; }
+  .small-round-button i {
+    color: grey;
+    font-size: 10px; }
+
+.background-grey {
+  background-color: #f9fafc;
+  border: solid #eaebed;
+  border-width: 1px 0; }
+
 .round-icon {
   height: 70px;
   width: 70px;
@@ -112,8 +117,3 @@ p, a, li {
   background-color: #e74c3c;
   margin: 5px;
   padding: 3px; }
-
-.background-grey {
-  background-color: #f9fafc;
-  border: solid #eaebed;
-  border-width: 1px 0; }
