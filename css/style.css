@@ -1,21 +1,22 @@
 * {
   color: grey; }
 
-header a {
-  color: grey; }
-
-header div {
-  font-size: 10px; }
-  header div button {
+header, #main_nav {
+  background-color: white; }
+  header a, #main_nav a {
+    color: grey; }
+  header button, #main_nav button {
     background-color: transparent;
-    border: none; }
-
-header form div {
-  width: 150px;
-  height: 30px;
-  border-radius: 15px; }
-  header form div i {
-    color: #1ccdca; }
+    border: none;
+    font-size: 10px; }
+  header div, #main_nav div {
+    font-size: 10px; }
+  header form div, #main_nav form div {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px; }
+    header form div i, #main_nav form div i {
+      color: #1ccdca; }
 
 h3 {
   font-size: 20px;

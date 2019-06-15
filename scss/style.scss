@@ -2,16 +2,19 @@
   color: grey; //TODO make variable
 }
 
-header {
+header, #main_nav {
+  background-color: white;
+
   a {
-    //color: grey;
+    color: grey;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
   }
   div {
     font-size: 10px;
-    button {
-      background-color: transparent;
-      border: none;
-    }
   }
   form {
     div {
@@ -32,7 +35,6 @@ h3 {
 
 h4 {
   font-size: 14px;
-
 }
 
 p, a, li {
