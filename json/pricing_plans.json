@@ -1,6 +1,7 @@
 {"pricing plans": [
   {
     "id": 1,
+    "highlight": false,
     "name": "STARTER",
     "period": "MONTHLY",
     "price": "573",
@@ -15,6 +16,7 @@
   },
   {
     "id": 2,
+    "highlight": true,
     "name": "STANDARD",
     "period": "MONTHLY",
     "price": "234",
@@ -29,6 +31,7 @@
   },
   {
     "id": 3,
+    "highlight": false,
     "name": "PROFESSIONAL",
     "period": "MONTHLY",
     "price": "1234",

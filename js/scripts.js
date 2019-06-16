@@ -1,31 +1,57 @@
 "use strict";
 
-$(function(){
+$(function () {
 
-    const PRICINGPLANS = 'js/prising_plans.json';
+    const PRICINGPLANS = "json/pricing_plans.json";
+    let pricingPlansHtml = "";
 
-    // // $.get(PRICINGPLANS, processPricingPlans());
-    //
-    // $.get(PRICINGPLANS, function(data, status){
-    //     alert("Data: " + data + "\nStatus: " + status);
-    // });
-    //
-    //
-    // function processPricingPlans(data) {
-    //     console.log(data);
-    // }
-    //
+    Ajax(PRICINGPLANS, processPricingPlans);
 
-    function loadDoc() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+    /**
+     *
+     * @param url (string)
+     * @param callBack (function)
+     */
+    function Ajax(url, callBack) {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
-                console.log(this.responseText);
+                callBack(JSON.parse(this.responseText));
             }
         };
-        xhttp.open("GET", PRICINGPLANS, true);
+        xhttp.open("GET", url, true);
         xhttp.send();
     }
 
-    loadDoc();
+    /**
+     * Construct html for "pricing plans" section from json
+     * @param plans (object)
+     */
+    function processPricingPlans(plans) {  //TODO add active class for tables in json
+        plans = plans["pricing plans"];
+        for (let planNo in plans) {
+            if (plans.hasOwnProperty(planNo)) {
+                console.log(plans[planNo]);
+                console.log(plans[planNo].highlight);
+                let highlighted = '';
+                if (plans[planNo].highlight) highlighted = ' class="highlighted"'; //add highlighted class if needed
+                pricingPlansHtml += '<div class="col-md-4 col-12 mb-5"><table class="table table-bordered w-100">' +
+                    '<tr><th' + highlighted + '><div class="hexagon">' +
+                    '<h5>' + (plans[planNo]).price + '</h5>' +
+                    '<h6>' + (plans[planNo]).period + '</h6></div>' +
+                    (plans[planNo]).name + '</th></tr>';  //table heading ends here
+                for (let feature in (plans[planNo]).features) {
+                    if ((plans[planNo]).features.hasOwnProperty(feature)) {
+                        let check = '<i class="fas fa-times text-danger"></i> ';
+                        if (((plans[planNo]).features)[feature]) check = '<i class="fas fa-check text-success"></i> ';
+                        pricingPlansHtml += '<tr><td>' + check + feature + '</td></tr>'
+                    }
+                } //features end here
+                pricingPlansHtml += '<tr><td><button id="order' + (plans[planNo]).id + '" class="btn" type="button">' +
+                    '<i class="fas fa-shopping-cart"></i><i> Order Now</i></button></td></tr></table></div>';
+            } //order now button ends here
+        }
+        $("#pricing_plans").html(pricingPlansHtml);
+    }
+
 });

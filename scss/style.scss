@@ -44,7 +44,7 @@ p, a, li {
 //Bootstrap class modification BEGIN
 
 .container {
-  max-width: 1000px;
+  max-width: 950px;
 }
 
 .progress {
@@ -159,4 +159,12 @@ p, a, li {
     margin: 5px;
     padding: 3px;
   }
+}
+
+.hexagon { //TODO sort this out
+  background-color: #1ccdca;
+}
+
+.highlighted, .activated-plan { //TODO sort this out
+  background-color: #1ccdca;
 }
