@@ -35,11 +35,11 @@ $(function () {
                 console.log(plans[planNo].highlight);
                 let highlighted = '';
                 if (plans[planNo].highlight) highlighted = ' class="highlighted"'; //add highlighted class if needed
-                pricingPlansHtml += '<div class="col-md-4 col-12 mb-5"><table class="table table-bordered w-100">' +
+                pricingPlansHtml += '<div class="col-md-4 col-12 mb-5"><table class="table table-bordered text-center">' +
                     '<tr><th' + highlighted + '><div class="hexagon">' +
                     '<h5>' + (plans[planNo]).price + '</h5>' +
                     '<h6>' + (plans[planNo]).period + '</h6></div>' +
-                    (plans[planNo]).name + '</th></tr>';  //table heading ends here
+                    '<span>' + (plans[planNo]).name + '</span></th></tr>';  //table heading ends here
                 for (let feature in (plans[planNo]).features) {
                     if ((plans[planNo]).features.hasOwnProperty(feature)) {
                         let check = '<i class="fas fa-times text-danger"></i> ';
@@ -47,11 +47,11 @@ $(function () {
                         pricingPlansHtml += '<tr><td>' + check + feature + '</td></tr>'
                     }
                 } //features end here
-                pricingPlansHtml += '<tr><td><button id="order' + (plans[planNo]).id + '" class="btn" type="button">' +
+                pricingPlansHtml += '<tr><td><button id="order' + (plans[planNo]).id + '" class="btn border my-3" type="button">' +
                     '<i class="fas fa-shopping-cart"></i><i> Order Now</i></button></td></tr></table></div>';
             } //order now button ends here
         }
-        $("#pricing_plans").html(pricingPlansHtml);
+        $("#pricing_plans_section").html(pricingPlansHtml);
     }
 
 });

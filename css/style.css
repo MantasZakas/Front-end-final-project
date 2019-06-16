@@ -80,6 +80,43 @@ p, a, li {
 #counter_section p {
   font-size: 20px; }
 
+#pricing_plans_section .highlighted, #pricing_plans_section .activated-plan {
+  background-color: #1ccdca; }
+  #pricing_plans_section .highlighted span, #pricing_plans_section .activated-plan span {
+    color: white; }
+
+#pricing_plans_section .hexagon {
+  background-image: url("../images/rounded-hexagon-filled.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75px;
+  width: 75px;
+  padding-top: 15px;
+  transform: translateY(-40px); }
+
+#pricing_plans_section span {
+  transform: translateY(-20px); }
+
+#pricing_plans_section th {
+  color: #1ccdca;
+  max-height: 100px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#pricing_plans_section button {
+  border-radius: 20px; }
+
+#pricing_plans_section h5, #pricing_plans_section h6, #pricing_plans_section span {
+  color: #1ccdca; }
+
+#pricing_plans_section h6 {
+  font-size: 10px;
+  margin-bottom: 15px; }
+
 .small-round-button {
   height: 30px;
   width: 30px; }
@@ -119,8 +156,6 @@ p, a, li {
   margin: 5px;
   padding: 3px; }
 
-.hexagon {
-  background-color: #1ccdca; }
-
 .highlighted, .activated-plan {
-  background-color: #1ccdca; }
+  background-color: #1ccdca;
+  color: white; }
