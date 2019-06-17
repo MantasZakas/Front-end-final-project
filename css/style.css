@@ -150,14 +150,18 @@ p, a, li {
   background-color: #191e21;
   border: solid #323437;
   border-width: 1px 0; }
-  .background-almost-black h4, .background-almost-black span, .background-almost-black i {
+  .background-almost-black h4, .background-almost-black h5, .background-almost-black span, .background-almost-black i {
     color: white; }
-  .background-almost-black button, .background-almost-black span, .background-almost-black input {
+  .background-almost-black button, .background-almost-black span, .background-almost-black input, .background-almost-black h5 {
     font-size: 12px; }
+  .background-almost-black button {
+    color: grey; }
   .background-almost-black hr {
     border-color: #323437; }
   .background-almost-black #logo {
     max-height: 125px; }
+  .background-almost-black #read_more_posts i {
+    color: #1ccdca; }
 
 .round-icon {
   height: 70px;
@@ -195,3 +199,6 @@ p, a, li {
 
 .colored-background {
   background-color: #1ccdca; }
+
+.colored-border {
+  border-color: #1ccdca; }

@@ -203,17 +203,25 @@ p, a, li {
   background-color: #191e21;
   border: solid #323437;
   border-width: 1px 0;
-  h4, span, i {
+  h4, h5, span, i {
     color: white;
   }
-  button, span, input {
+  button, span, input, h5 {
     font-size: 12px;
+  }
+  button {
+    color: grey;
   }
   hr {
     border-color: #323437;
   }
   #logo {
     max-height: 125px;
+  }
+  #read_more_posts {
+    i {
+      color: $primary-color;
+    }
   }
 }
 
@@ -260,4 +268,8 @@ p, a, li {
 
 .colored-background {
   background-color: $primary-color;
+}
+
+.colored-border {
+  border-color: $primary-color;
 }
