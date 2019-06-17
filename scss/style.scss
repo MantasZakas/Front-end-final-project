@@ -43,6 +43,13 @@ p, a, li {
   font-size: 12px;
 }
 
+footer {
+  background-color: #131619;
+  a {
+    color: grey;
+  }
+}
+
 //Bootstrap class modification BEGIN
 
 //.container {   TODO might need to remove this
@@ -65,6 +72,13 @@ p, a, li {
 .btn-dark {
   background-color: #0c0f10;
   border-color: transparent;
+}
+
+.modal-body {
+  .close {
+    font-size: 30px;
+    transform: translateY(-40px) translateX(40px);
+  }
 }
 
 //Bootstrap modification End
@@ -203,8 +217,11 @@ p, a, li {
   background-color: #191e21;
   border: solid #323437;
   border-width: 1px 0;
-  h4, h5, span, i {
+  h4, h5, span {
     color: white;
+  }
+  h6 {
+    font-weight:normal;
   }
   button, span, input, h5 {
     font-size: 12px;
@@ -218,10 +235,18 @@ p, a, li {
   #logo {
     max-height: 125px;
   }
+  #read_more {
+    i {
+      color: white;
+    }
+  }
   #read_more_posts {
     i {
       color: $primary-color;
     }
+  }
+  #author {
+    transform: translateY(-20px) translateX(20px);
   }
 }
 

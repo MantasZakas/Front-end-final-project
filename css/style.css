@@ -28,6 +28,11 @@ h4 {
 p, a, li {
   font-size: 12px; }
 
+footer {
+  background-color: #131619; }
+  footer a {
+    color: grey; }
+
 .progress {
   height: 25px;
   background-color: #2a3136; }
@@ -41,6 +46,10 @@ p, a, li {
 .btn-dark {
   background-color: #0c0f10;
   border-color: transparent; }
+
+.modal-body .close {
+  font-size: 30px;
+  transform: translateY(-40px) translateX(40px); }
 
 #slider1 {
   background-color: darkslategrey;
@@ -150,8 +159,10 @@ p, a, li {
   background-color: #191e21;
   border: solid #323437;
   border-width: 1px 0; }
-  .background-almost-black h4, .background-almost-black h5, .background-almost-black span, .background-almost-black i {
+  .background-almost-black h4, .background-almost-black h5, .background-almost-black span {
     color: white; }
+  .background-almost-black h6 {
+    font-weight: normal; }
   .background-almost-black button, .background-almost-black span, .background-almost-black input, .background-almost-black h5 {
     font-size: 12px; }
   .background-almost-black button {
@@ -160,8 +171,12 @@ p, a, li {
     border-color: #323437; }
   .background-almost-black #logo {
     max-height: 125px; }
+  .background-almost-black #read_more i {
+    color: white; }
   .background-almost-black #read_more_posts i {
     color: #1ccdca; }
+  .background-almost-black #author {
+    transform: translateY(-20px) translateX(20px); }
 
 .round-icon {
   height: 70px;

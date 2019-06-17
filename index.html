@@ -685,7 +685,7 @@
                         <hr class="my-4">
                         <!--Flicker widget-->
                         <h4 class="mb-3">FLICKER WIDGET</h4>
-                        <div class="row px-md-0 px-3">
+                        <div class="row mx-0">
                             <div class="col-md-4 col-6 p-1">
                                 <a href="#">
                                     <img class="img-fluid" src="images/flicker1.jpg" alt="bicycle 1">
@@ -716,10 +716,67 @@
                                     <img class="img-fluid" src="images/flicker6.jpg" alt="bicycle 6">
                                 </a>
                             </div>
-                            <!--TODO fix padding in row div with images-->
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 mb-lg-0 mb-5">PLACEHOLDER</div>
+                    <div class="col-md-6 col-12 mb-lg-0 mb-5">
+                        <!--Best author-->
+                        <h4 class="mb-3">BEST AUTHOR</h4>
+                        <div class="row bg-white rounded mx-0 mt-5">
+                            <div class="col-5 px-0">
+                                <img id="author" class="img-fluid" src="images/team2-medium.jpg" alt="author">
+                            </div>
+                            <div class="col-7">
+                                <h6 class="py-2 pl-3 mb-0">JOHN DOE</h6>
+                                <nav>
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link pr-0" href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pr-0" href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pr-0" href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pr-0" href="#">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <!--Custom video-->
+                        <h4 class="mb-3">CUSTOM VIDEO</h4>
+                        <button class="btn p-0" type="button" data-toggle="modal" data-target="#video_modal">
+                            <img class="img-fluid" src="images/blog5.jpg" alt="video">
+                        </button>
+                        <!--Modal window for video-->
+                        <div class="modal fade" id="video_modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <!--TODO sort out the button-->
+                                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                                    <div class="modal-body p-0">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe width="560" height="315"
+                                                    src="https://www.youtube.com/embed/YV4oYkIeGJc?&autoplay=1" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -727,6 +784,27 @@
 </div>
 <!--END BOTTOM LINKS SECTION-->
 
+<!--BEGIN FOOTER-->
+<!--TODO sort out paddings and responsive in footer-->
+<footer>
+    <div class="container py-4">
+        <div class="row w-100">
+            <div class="col-md-6 col-12 p-0">
+                <p class="m-0">
+                    Copyright © 2015 Powered By <a href="#">IdealTheme</a> - <a href="#">Enar Theme</a> - All Rights
+                    Reserved
+                </p>
+            </div>
+            <div class="col-md-6 col-12 p-0">
+                <p class="m-0 text-right">
+                    <a href="#">Home</a> / <a href="#">About Us</a> / <a href="#">Help Center</a>
+                    / <a href="#">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END FOOTER-->
 
 <!--TODO add button to go to the top of the page-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3eDQxZgH3A7Ra7gBM_SqXesiYDxgShzk&callback=googleMap"></script>
