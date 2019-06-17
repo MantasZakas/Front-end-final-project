@@ -28,9 +28,6 @@ h4 {
 p, a, li {
   font-size: 12px; }
 
-.container {
-  max-width: 950px; }
-
 .progress {
   height: 25px;
   background-color: #2a3136; }
@@ -40,6 +37,10 @@ p, a, li {
 
 .tab-content, .card-header {
   background-color: white; }
+
+.btn-dark {
+  background-color: #0c0f10;
+  border-color: transparent; }
 
 #slider1 {
   background-color: darkslategrey;
@@ -117,6 +118,17 @@ p, a, li {
   font-size: 10px;
   margin-bottom: 15px; }
 
+#submit {
+  background-color: #1ccdca;
+  color: white; }
+  #submit i {
+    color: white; }
+
+#google_map {
+  width: 100%;
+  height: 400px;
+  border-top: solid white 1px; }
+
 .small-round-button {
   height: 30px;
   width: 30px; }
@@ -128,6 +140,24 @@ p, a, li {
   background-color: #f9fafc;
   border: solid #eaebed;
   border-width: 1px 0; }
+
+.background-purple {
+  background-color: #684962; }
+  .background-purple h3 {
+    color: white; }
+
+.background-almost-black {
+  background-color: #191e21;
+  border: solid #323437;
+  border-width: 1px 0; }
+  .background-almost-black h4, .background-almost-black span, .background-almost-black i {
+    color: white; }
+  .background-almost-black button, .background-almost-black span, .background-almost-black input {
+    font-size: 12px; }
+  .background-almost-black hr {
+    border-color: #323437; }
+  .background-almost-black #logo {
+    max-height: 125px; }
 
 .round-icon {
   height: 70px;
@@ -159,3 +189,9 @@ p, a, li {
 .highlighted, .activated-plan {
   background-color: #1ccdca;
   color: white; }
+
+.colored {
+  color: #1ccdca; }
+
+.colored-background {
+  background-color: #1ccdca; }

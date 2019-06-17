@@ -1,5 +1,18 @@
 "use strict";
 
+function googleMap() { //needs to be in global scope
+    let myLatLng = {lat: 55.7243307, lng: 21.1270047660435};
+    let mapProp= {
+        center:new google.maps.LatLng(myLatLng),
+        zoom: 18,
+    };
+    let map = new google.maps.Map(document.getElementById("google_map"),mapProp);
+    let marker = new google.maps.Marker({  //TODO change marker icon
+        position: (myLatLng),
+        map: map,
+    });
+}
+
 $(function () {
 
     const PRICINGPLANS = "json/pricing_plans.json";
