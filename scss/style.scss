@@ -137,6 +137,19 @@ footer {
   padding: 0;
   border: none;
   border-radius: 0;
+  min-width: auto;
+}
+
+.dropright {
+  .dropdown-menu {
+    transform: translateX(-2px);
+  }
+}
+
+.dropleft {
+  .dropdown-menu {
+    transform: translateX(2px);
+  }
 }
 
 .dropdown-item {

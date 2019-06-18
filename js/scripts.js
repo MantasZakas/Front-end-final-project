@@ -68,3 +68,5 @@ $(function () {
 
 //TODO add script to make dropdown not work on click, link below
 //https://stackoverflow.com/questions/42183672/how-to-implement-a-navbar-dropdown-hover-in-bootstrap-v4/42183824
+//TODO add transition to dropdown
+//TODO make custom social menu dropright
