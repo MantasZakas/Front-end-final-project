@@ -1,14 +1,18 @@
 $primary-color: #1ccdca;
+$secondary-color: grey;
 
 * {
-  color: grey;
+  color: $secondary-colory;
 }
 
 header, #main_nav {
   background-color: white;
 
   a {
-    color: grey;
+    color: $secondary-color;
+    .colored {
+      color: $primary-color
+    }
   }
   button {
     background-color: transparent;
@@ -46,8 +50,17 @@ p, a, li {
 footer {
   background-color: #131619;
   a {
-    color: grey;
+    color: $secondary-color;
+
   }
+  a:hover {
+    text-decoration: none;
+    color: unset;
+  }
+  .colored:hover {
+    color: $primary-color;
+  }
+
 }
 
 //Bootstrap class modification BEGIN
@@ -195,7 +208,7 @@ footer {
   height: 30px;
   width: 30px;
   i {
-    color: grey;
+    color: $secondary-color;
     font-size: 10px;
   }
 }
@@ -227,7 +240,7 @@ footer {
     font-size: 12px;
   }
   button {
-    color: grey;
+    color: $secondary-color;
   }
   hr {
     border-color: #323437;
