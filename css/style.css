@@ -28,13 +28,15 @@ header, #main_nav {
       color: white; }
   header .active:hover span i, #main_nav .active:hover span i {
     color: white !important; }
-  header .dropdown-item:hover, header .nav-item:hover, #main_nav .dropdown-item:hover, #main_nav .nav-item:hover {
-    background-color: #19b8b5 !important;
+  header .dropdown-item:hover, header #social_nav > .nav-item:hover, #main_nav .dropdown-item:hover, #main_nav #social_nav > .nav-item:hover {
     color: white; }
-    header .dropdown-item:hover i, header .nav-item:hover i, #main_nav .dropdown-item:hover i, #main_nav .nav-item:hover i {
+    header .dropdown-item:hover i, header #social_nav > .nav-item:hover i, #main_nav .dropdown-item:hover i, #main_nav #social_nav > .nav-item:hover i {
       color: white; }
-    header .dropdown-item:hover span i, header .nav-item:hover span i, #main_nav .dropdown-item:hover span i, #main_nav .nav-item:hover span i {
+    header .dropdown-item:hover span i, header #social_nav > .nav-item:hover span i, #main_nav .dropdown-item:hover span i, #main_nav #social_nav > .nav-item:hover span i {
       color: #19b8b5; }
+
+header .dropdown-item:hover, header #social_nav > .nav-item:hover {
+  background-color: #19b8b5 !important; }
 
 h3 {
   font-size: 20px;
@@ -94,6 +96,15 @@ footer {
 
 .dropdown-item {
   color: white; }
+
+#main_nav .dropdown-menu {
+  background-color: #13181a; }
+  #main_nav .dropdown-menu a {
+    color: lightgray; }
+  #main_nav .dropdown-menu .dropdown-divider {
+    border-color: #1a1f21; }
+  #main_nav .dropdown-menu .dropdown-item:hover {
+    background-color: inherit; }
 
 #slider1 {
   background-color: darkslategrey;
@@ -170,6 +181,9 @@ footer {
 #pricing_plans_section h6 {
   font-size: 10px;
   margin-bottom: 15px; }
+
+#shopping_cart:hover i {
+  color: #1ccdca; }
 
 #submit {
   background-color: #1ccdca;
