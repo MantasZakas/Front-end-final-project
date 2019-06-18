@@ -1,10 +1,13 @@
 * {
-  color: grey; }
+  color: grey;
+  transition: 500ms; }
 
 header, #main_nav {
   background-color: white; }
   header a, #main_nav a {
     color: grey; }
+    header a .colored, #main_nav a .colored {
+      color: #1ccdca; }
   header button, #main_nav button {
     background-color: transparent;
     border: none;
@@ -17,6 +20,21 @@ header, #main_nav {
     border-radius: 15px; }
     header form div i, #main_nav form div i {
       color: #1ccdca; }
+  header span i, #main_nav span i {
+    color: #1ccdca; }
+  header .active, #main_nav .active {
+    background-color: #19b8b5 !important; }
+    header .active span i, #main_nav .active span i {
+      color: white; }
+  header .active:hover span i, #main_nav .active:hover span i {
+    color: white !important; }
+  header .dropdown-item:hover, header .nav-item:hover, #main_nav .dropdown-item:hover, #main_nav .nav-item:hover {
+    background-color: #19b8b5 !important;
+    color: white; }
+    header .dropdown-item:hover i, header .nav-item:hover i, #main_nav .dropdown-item:hover i, #main_nav .nav-item:hover i {
+      color: white; }
+    header .dropdown-item:hover span i, header .nav-item:hover span i, #main_nav .dropdown-item:hover span i, #main_nav .nav-item:hover span i {
+      color: #19b8b5; }
 
 h3 {
   font-size: 20px;
@@ -55,6 +73,20 @@ footer {
 .modal-body .close {
   font-size: 30px;
   transform: translateY(-40px) translateX(40px); }
+
+.dropdown {
+  z-index: 1030; }
+
+.dropdown:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  padding: 0;
+  border: none;
+  border-radius: 0; }
+
+.dropdown-item {
+  color: white; }
 
 #slider1 {
   background-color: darkslategrey;
@@ -215,7 +247,7 @@ footer {
   color: white; }
 
 .colored {
-  color: #1ccdca !important; }
+  color: #1ccdca; }
 
 .colored-background {
   background-color: #1ccdca; }

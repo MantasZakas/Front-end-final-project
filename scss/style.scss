@@ -1,8 +1,10 @@
 $primary-color: #1ccdca;
+$active-color: #19b8b5;
 $secondary-color: grey;
 
 * {
-  color: $secondary-colory;
+  color: $secondary-color;
+  transition: 500ms;
 }
 
 header, #main_nav {
@@ -13,6 +15,7 @@ header, #main_nav {
     .colored {
       color: $primary-color
     }
+
   }
   button {
     background-color: transparent;
@@ -29,6 +32,38 @@ header, #main_nav {
       border-radius: 15px;
       i {
         color: $primary-color;
+      }
+    }
+  }
+  span { //the 4 span>i are needed to hide check marks on menu elements without the active class
+    i {
+      color: $primary-color;
+    }
+  }
+  .active {
+    background-color: $active-color !important;
+    span {
+      i {
+        color: white;
+      }
+    }
+  }
+  .active:hover {
+    span {
+      i {
+        color: white !important;
+      }
+    }
+  }
+  .dropdown-item:hover, .nav-item:hover {
+    background-color: $active-color !important;
+    color: white;
+    i {
+      color: white;
+    }
+    span {
+      i {
+        color: $active-color;
       }
     }
   }
@@ -65,10 +100,6 @@ footer {
 
 //Bootstrap class modification BEGIN
 
-//.container {   TODO might need to remove this
-  //max-width: 1000px;
-//}
-
 .progress {
   height: 25px;
   background-color: #2a3136;
@@ -92,6 +123,24 @@ footer {
     font-size: 30px;
     transform: translateY(-40px) translateX(40px);
   }
+}
+
+.dropdown { //needed for dropdown menu to be shown above the sticky navbar
+  z-index: 1030;
+}
+
+.dropdown:hover > .dropdown-menu { //show dropdown menu on hover
+  display: block;
+}
+
+.dropdown-menu {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  color: white;
 }
 
 //Bootstrap modification End

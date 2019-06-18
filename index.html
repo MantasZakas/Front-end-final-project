@@ -23,7 +23,19 @@
                 <div class="col-lg-9 d-flex justify-content-center justify-content-lg-start px-0">
                     <ul class="list-inline my-lg-auto my-3">
                         <li class="list-inline-item px-1">
-                            <button type="button"><i class="fas fa-globe-europe"></i> ENGLISH</button>
+                            <div class="dropdown">
+                                <button id="language_selection" type="button" data-toggle="dropdown">
+                                    <i class="fas fa-globe-europe"></i> ENGLISH
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item colored-background active d-flex" href="#">
+                                        English<span class="text-right w-100"><i class="fas fa-check"></i></span>
+                                    </a>
+                                    <a class="dropdown-item colored-background d-flex" href="#">
+                                        RTL<span class="text-right w-100"><i class="fas fa-check"></i></span>
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="list-inline-item px-1">
                             <button type="button"><i class="fas fa-key"></i> LOGIN</button>

@@ -40,12 +40,10 @@ $(function () {
      * Construct html for "pricing plans" section from json
      * @param plans (object)
      */
-    function processPricingPlans(plans) {  //TODO add active class for tables in json
+    function processPricingPlans(plans) {
         plans = plans["pricing plans"];
         for (let planNo in plans) {
             if (plans.hasOwnProperty(planNo)) {
-                console.log(plans[planNo]);
-                console.log(plans[planNo].highlight);
                 let highlighted = '';
                 if (plans[planNo].highlight) highlighted = ' class="highlighted"'; //add highlighted class if needed
                 pricingPlansHtml += '<div class="col-md-4 col-12 mb-5"><table class="table table-bordered text-center">' +
@@ -66,5 +64,7 @@ $(function () {
         }
         $("#pricing_plans_section").html(pricingPlansHtml);
     }
-
 });
+
+//TODO add script to make dropdown not work on click, link below
+//https://stackoverflow.com/questions/42183672/how-to-implement-a-navbar-dropdown-hover-in-bootstrap-v4/42183824
