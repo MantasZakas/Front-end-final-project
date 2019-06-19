@@ -2,6 +2,20 @@ $primary-color: #1ccdca;
 $active-color: #19b8b5;
 $secondary-color: grey;
 
+@media (min-width: 992px) {  //bootstrap lg
+  #main_nav {
+    .dropdown-menu {
+      background-color: #13181a;
+      a {
+        color: lightgray;
+      }
+    }
+    .dropdown-divider {
+      border-color: #1a1f21;
+    }
+  }
+}
+
 * {
   color: $secondary-color;
   transition: 500ms;
@@ -165,13 +179,6 @@ footer {
 
 #main_nav {
   .dropdown-menu {
-    background-color: #13181a;
-    a {
-      color: lightgray;
-    }
-    .dropdown-divider {
-      border-color: #1a1f21;
-    }
     .dropdown-item:hover {
       background-color: inherit;
     }
@@ -366,6 +373,21 @@ footer {
   }
 }
 
+.round-icon-parent:hover {
+  h4 {
+    transition-delay: 500ms;
+    color: $primary-color;
+  }
+  .round-icon {
+    background-color: $primary-color;
+    //box-shadow: 0 0 0 10px $primary-color;
+    animation: shadow-fade 500ms;
+    i {
+      color: white;
+    }
+  }
+}
+
 .arrow-list {
   li {
     padding-bottom: 5px;
@@ -398,4 +420,13 @@ footer {
 
 .colored-border {
   border-color: $primary-color;
+}
+
+@keyframes shadow-fade {
+  0% {
+    box-shadow: 0 0 0 10px rgba(28, 205, 202, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(28, 205, 202, 1);
+  }
 }
