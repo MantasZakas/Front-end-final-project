@@ -70,6 +70,11 @@ footer {
   height: 25px;
   background-color: #2a3136; }
 
+.progress-bar {
+  transition: 2000ms;
+  width: 1px;
+  background-color: #2a3136; }
+
 .card-header {
   cursor: pointer; }
 
@@ -260,6 +265,13 @@ footer {
   animation: shadow-fade 500ms; }
   .round-icon-parent:hover .round-icon i {
     color: white; }
+
+.progress-tag {
+  min-width: 1px; }
+
+.progress-percentage {
+  color: #2a3136;
+  transition-duration: 2000ms; }
 
 .arrow-list li {
   padding-bottom: 5px; }

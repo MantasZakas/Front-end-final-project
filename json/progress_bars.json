@@ -1,0 +1,32 @@
+{"progress bars": [
+  {
+    "id": 1,
+    "name": "WEB DESIGN",
+    "progress": "80%",
+    "color": "#0bacb8"
+  },
+  {
+    "id": 2,
+    "name": "PROGRAMMING",
+    "progress": "60%",
+    "color": "#3a94b2"
+  },
+  {
+    "id": 3,
+    "name": "HTML/CSS",
+    "progress": "70%",
+    "color": "#1ccdca"
+  },
+  {
+    "id": 4,
+    "name": "WORDPRESS",
+    "progress": "100%",
+    "color": "#00c194"
+  },
+  {
+    "id": 5,
+    "name": "JOOMLA",
+    "progress": "40%",
+    "color": "#e74c3c"
+  }
+]}

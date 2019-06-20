@@ -1,6 +1,7 @@
 $primary-color: #1ccdca;
 $active-color: #19b8b5;
 $secondary-color: grey;
+$progress-background: #2a3136;
 
 @media (min-width: 992px) {  //bootstrap lg
   #main_nav {
@@ -121,7 +122,13 @@ footer {
 
 .progress {
   height: 25px;
-  background-color: #2a3136;
+  background-color: $progress-background;
+}
+
+.progress-bar {
+  transition: 2000ms;
+  width: 1px;
+  background-color: $progress-background;
 }
 
 .card-header {
@@ -386,6 +393,15 @@ footer {
       color: white;
     }
   }
+}
+
+.progress-tag {
+  min-width: 1px;
+}
+
+.progress-percentage {
+  color: $progress-background;
+  transition-duration: 2000ms;
 }
 
 .arrow-list {
