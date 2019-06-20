@@ -315,6 +315,30 @@ footer {
   }
 }
 
+.tab-header {
+  a {
+    color: $secondary-color;
+  }
+  .active {
+    color: $primary-color !important;
+    font-weight: bold;
+    border-top : solid $primary-color !important;
+  }
+}
+
+.accordion-header {
+  background-color: $primary-color;
+  b, i {
+    color: white;
+  }
+}
+.accordion-header.collapsed {
+  background-color: unset;
+  b, i {
+    color: unset;
+  }
+}
+
 .background-grey {
   background-color: #f9fafc;
   border: solid #eaebed;

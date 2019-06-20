@@ -210,6 +210,24 @@ footer {
     color: grey;
     font-size: 10px; }
 
+.tab-header a {
+  color: grey; }
+
+.tab-header .active {
+  color: #1ccdca !important;
+  font-weight: bold;
+  border-top: solid #1ccdca !important; }
+
+.accordion-header {
+  background-color: #1ccdca; }
+  .accordion-header b, .accordion-header i {
+    color: white; }
+
+.accordion-header.collapsed {
+  background-color: unset; }
+  .accordion-header.collapsed b, .accordion-header.collapsed i {
+    color: unset; }
+
 .background-grey {
   background-color: #f9fafc;
   border: solid #eaebed;
