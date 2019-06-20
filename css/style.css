@@ -203,6 +203,21 @@ footer {
   height: 400px;
   border-top: solid white 1px; }
 
+.fancy-line div {
+  width: 200px;
+  border-top: solid 1px lightgray; }
+  .fancy-line div div {
+    width: 50%;
+    border-top: solid 1px #1ccdca;
+    transform: translateY(-1px); }
+    .fancy-line div div i {
+      font-size: 10px;
+      color: #1ccdca;
+      transform: translateY(-15px) translateX(-9px); }
+
+.fancy-line:hover div div {
+  width: 75%; }
+
 .small-round-button {
   height: 30px;
   width: 30px; }

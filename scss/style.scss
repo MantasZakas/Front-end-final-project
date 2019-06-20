@@ -305,6 +305,30 @@ footer {
   border-top: solid white 1px;
 }
 
+.fancy-line {
+  div {
+    width: 200px;
+    border-top: solid 1px lightgray;
+    div {
+      width: 50%;
+      border-top: solid 1px $primary-color;
+      transform: translateY(-1px);
+      i {
+        font-size: 10px;
+        color: $primary-color;
+        transform: translateY(-15px) translateX(-9px);
+      }
+    }
+  }
+}
+
+.fancy-line:hover {
+  div {
+    div {
+      width: 75%;
+    }
+  }
+}
 
 .small-round-button {
   height: 30px;
@@ -454,6 +478,12 @@ footer {
   background-color: $primary-color;
   color: white;
 }
+
+//.round-icon-header:hover {
+//  h4 {
+//    color: $primary-color;
+//  }
+//}
 
 .colored {
   color: $primary-color;
