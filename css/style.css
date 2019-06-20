@@ -287,6 +287,9 @@ footer {
   margin: 5px;
   padding: 3px; }
 
+.faded-out {
+  opacity: 0; }
+
 .highlighted, .activated-plan {
   background-color: #1ccdca;
   color: white; }

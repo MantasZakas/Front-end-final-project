@@ -421,6 +421,10 @@ footer {
   }
 }
 
+.faded-out {
+  opacity: 0;
+}
+
 .highlighted, .activated-plan { //TODO sort this out
   background-color: $primary-color;
   color: white;

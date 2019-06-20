@@ -17,10 +17,14 @@ $(function () {
 
     const PRICINGPLANS = "json/pricing_plans.json";
     const PROGRESSBARS = "json/progress_bars.json";
+    let countersArray = [1500, 13, 95771, 384];
     let pricingPlansHtml = "";
+    let barsArray = [];
+    let i = 0; //progress bar counter, needs to be global because function is self-calling
+    let progressLoopStarted = false;
 
+    Ajax(PROGRESSBARS, prepareProgressBars);
     Ajax(PRICINGPLANS, processPricingPlans);
-    Ajax(PROGRESSBARS, processProgressBars);
 
     /**
      *
@@ -68,45 +72,109 @@ $(function () {
     }
 
     /**
+     * Returns if a DOM element is in the viewport
+     * @param element (DOM element)
+     * @returns {boolean}
+     */
+    function isElementVisible(element) {
+        let viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        let topPosition = element.offsetTop - viewportHeight;
+        let bottomPosition = element.offsetTop + element.clientHeight;
+        let scrollPosition = document.documentElement.scrollTop;
+        let visible = false;
+        if (scrollPosition >= topPosition && scrollPosition <= bottomPosition) visible = true;
+        return visible
+    }
+
+    function displayOrListen (element) {
+
+    }
+
+    /**
      *
      * @param bars (array)
      */
-    function processProgressBars(bars) {
-        bars = bars["progress bars"];
-        console.log(bars);
-        let i = 0;
-        loopProgressBars(bars, i);
-
-        // getPosition(document.getElementById("progress_bar_container"));
-
-        // for (let barNo in bars) {
-        //     if (bars.hasOwnProperty(barNo)) {
-        //         console.log(bars[barNo]);
-        //         console.log((bars[barNo]).progress);
-        //         console.log(document.getElementById(
-        //             "prog" + (bars[barNo]).id
-        //         ));
-        //         // setTimeout (function() {displayProgressBars(bars[barNo])}, 1000);
-        //         displayProgressBars(bars[barNo]);
-        //
-        //     }
-        // }
+    function prepareProgressBars(bars) {
+        barsArray = bars["progress bars"];
+        let barsDiv = document.getElementById("progress_bar_container");
+        if (isElementVisible(barsDiv)) { //if element is in viewport, do the animation
+            loopProgressBars();
+        } else {
+            window.addEventListener("scroll", function() {
+                if (isElementVisible(barsDiv) && !progressLoopStarted) {
+                    loopProgressBars();
+                }
+            });
+        }
     }
 
     /**
      * Self calling loop with a set time delay
-     * @param bars (array)
-     * @param i (integer)
      */
-    function loopProgressBars(bars, i) {
+    function loopProgressBars() {
+        progressLoopStarted = true;
         setTimeout(function () {
-            displayProgressBars(bars[i]);
-            if (i < bars.length - 1) { //restart loop if condition is met
+            displayProgressBars(barsArray[i]);
+            if (i < barsArray.length - 1) { //restart loop if condition is met
                 i++;
-                loopProgressBars(bars, i) //pass on i
+                loopProgressBars() //pass on i
             }
         }, 500)
     }
+
+    /**
+     *
+     * @param number (number)
+     * @param element (DOM element)
+     */
+    function growingNumber(number, element) {
+        let shownNumber = 0;
+        let j = 0;
+        function grow() {
+            setTimeout(function () {
+                console.log(Math.round(shownNumber).toString()); //TODO change to innerHTML
+                element.innerHTML = Math.round(shownNumber).toString();
+                if (j < 100) {
+                    shownNumber += number / 100;
+                    j++;
+                    grow()
+                }
+            }, 20)
+        }
+        grow();
+    }
+
+    function prepareCounterSection () {
+        // TODO add the is visible thing
+        let countersDiv = document.getElementById("counter_section");
+        let counterElements = countersDiv.getElementsByTagName("h2");
+        console.log(countersDiv);
+        console.log(counterElements);
+        let j = 0;
+        function counterLoop () {
+            setTimeout(function () {
+                console.log(counterElements[j]);
+                // counterElements[j].parentElement.classList.remove("invisible");
+                counterElements[j].parentElement.style.opacity = "1";
+                growingNumber(countersArray[j], counterElements[j]);
+                if (j < 4) {
+                    j++;
+                    counterLoop()
+                }
+            }, 500)
+        }
+        counterLoop();
+    }
+
+
+
+
+    //
+    //
+    //
+    // growingNumber(50);
+    prepareCounterSection ();
+
 
     /**
      *
@@ -132,23 +200,6 @@ $(function () {
             barTag.style.color = "#ffffff";
         }, 1000);
         //TODO progress percentage tag needs to be svg, percentage number needs to grow
-
-    }
-
-    function getPosition(element) {
-        // let position = 0;
-        // let i = 50;
-        // while (element || i) {
-        //     position += (element.offsetTop - element.scrollTop + element.clientTop);
-        //     i--;
-        //     console.log(i);
-        // }
-        // console.log(position);
-        // return position;
-
-        let position = (element.offsetTop - element.scrollTop + element.clientTop);
-        console.log(position);
-
     }
 });
 
