@@ -3,14 +3,16 @@ $active-color: #19b8b5;
 $secondary-color: grey;
 $progress-background: #2a3136;
 
-@media (min-width: 992px) {  //bootstrap lg
+@media (min-width: 992px) { //bootstrap lg
   #main_nav {
     .dropdown-menu {
       background-color: #13181a;
+
       a {
         color: lightgray;
       }
     }
+
     .dropdown-divider {
       border-color: #1a1f21;
     }
@@ -27,42 +29,51 @@ header, #main_nav {
 
   a {
     color: $secondary-color;
+
     .colored {
       color: $primary-color
     }
 
   }
+
   button {
     background-color: transparent;
     border: none;
     font-size: 10px;
   }
+
   div {
     font-size: 10px;
   }
+
   form {
     div {
       width: 150px;
       height: 30px;
       border-radius: 15px;
+
       i {
         color: $primary-color;
       }
     }
   }
+
   span { //the 4 span>i are needed to hide check marks on menu elements without the active class
     i {
       color: $primary-color;
     }
   }
+
   .active {
     background-color: $active-color !important;
+
     span {
       i {
         color: white;
       }
     }
   }
+
   .active:hover {
     span {
       i {
@@ -70,11 +81,14 @@ header, #main_nav {
       }
     }
   }
-  .dropdown-item:hover, #social_nav>.nav-item:hover {
+
+  .dropdown-item:hover, #social_nav > .nav-item:hover {
     color: white;
+
     i {
       color: white;
     }
+
     span {
       i {
         color: $active-color;
@@ -84,7 +98,7 @@ header, #main_nav {
 }
 
 header {
-  .dropdown-item:hover, #social_nav>.nav-item:hover {
+  .dropdown-item:hover, #social_nav > .nav-item:hover {
     background-color: $active-color !important;
   }
 }
@@ -104,14 +118,17 @@ p, a, li {
 
 footer {
   background-color: #131619;
+
   a {
     color: $secondary-color;
 
   }
+
   a:hover {
     text-decoration: none;
     color: unset;
   }
+
   .colored:hover {
     color: $primary-color;
   }
@@ -132,7 +149,7 @@ footer {
 }
 
 .card-header {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .tab-content, .card-header {
@@ -209,6 +226,7 @@ footer {
     color: white;
     font-size: 20px;
   }
+
   p {
     font-size: 16px;
   }
@@ -216,10 +234,12 @@ footer {
 
 #progress_bar_container {
   background-color: #3C464D;
+
   h2 {
     color: white;
     font-size: 25px;
   }
+
   p {
     color: lightgray;
   }
@@ -236,9 +256,11 @@ footer {
     font-size: 30px;
     color: $primary-color;
   }
+
   h2 {
     color: #666666;
   }
+
   p {
     font-size: 20px;
   }
@@ -247,10 +269,12 @@ footer {
 #pricing_plans_section {
   .highlighted, .activated-plan {
     background-color: $primary-color;
+
     span {
       color: white;
     }
   }
+
   .hexagon {
     background-image: url("../images/rounded-hexagon-filled.svg");
     background-size: contain;
@@ -261,9 +285,11 @@ footer {
     padding-top: 15px;
     transform: translateY(-40px);
   }
+
   span {
     transform: translateY(-20px);
   }
+
   th {
     color: $primary-color;
     max-height: 100px;
@@ -273,9 +299,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   button {
     border-radius: 20px;
   }
+
   button:hover {
     background-color: #576162;
 
@@ -283,18 +311,22 @@ footer {
       color: white;
     }
   }
+
   h5, h6, span {
     color: $primary-color;
     transition-delay: 300ms;
   }
+
   h6 {
     font-size: 10px;
     margin-bottom: 15px;
   }
+
   table:hover {
     th {
       background-color: $primary-color;
     }
+
     span {
       color: white;
 
@@ -311,6 +343,7 @@ footer {
 #submit {
   background-color: $primary-color;
   color: white;
+
   i {
     color: white;
   }
@@ -321,8 +354,8 @@ footer {
 }
 
 #google_map {
-  width:100%;
-  height:400px;
+  width: 100%;
+  height: 400px;
   border-top: solid white 1px;
 }
 
@@ -330,19 +363,23 @@ footer {
   div {
     width: 200px;
     border-top: solid 1px lightgray;
+
     div {
       width: 50%;
       border-top: solid 1px $primary-color;
       transform: translateY(-1px);
+
       i {
         font-size: 10px;
         color: $primary-color;
         transform: translateY(-15px) translateX(-9px);
       }
+
       i.white-icon {
         transform: translateY(-6px) translateX(0px);
         background-color: white;
       }
+
       i.grey-icon {
         transform: translateY(-11px) translateX(0px);
         background-color: #f9fafc;
@@ -350,6 +387,7 @@ footer {
       }
     }
   }
+
   .extra-long {
     div {
       width: 300px;
@@ -360,6 +398,7 @@ footer {
 .fancy-line.extra-long {
   div {
     width: 300px;
+
     div {
       width: 30%;
     }
@@ -377,6 +416,7 @@ footer {
 .small-round-button {
   height: 30px;
   width: 30px;
+
   i {
     color: $secondary-color;
     font-size: 10px;
@@ -387,15 +427,17 @@ footer {
   a {
     color: $secondary-color;
   }
+
   .active {
     color: $primary-color !important;
     font-weight: bold;
-    border-top : solid $primary-color !important;
+    border-top: solid $primary-color !important;
   }
 }
 
 .accordion-header {
   background-color: $primary-color;
+
   b, i {
     color: white;
   }
@@ -403,6 +445,7 @@ footer {
 
 .accordion-header.collapsed {
   background-color: unset;
+
   b, i {
     color: unset;
   }
@@ -416,6 +459,7 @@ footer {
 
 .background-purple {
   background-color: #684962;
+
   h3 {
     color: white;
   }
@@ -425,36 +469,122 @@ footer {
   background-color: #191e21;
   border: solid #323437;
   border-width: 1px 0;
-  h4, h5, span {
+
+  h4, h5, span, a {
     color: white;
+    text-decoration: none;
   }
-  h6 {
-    font-weight:normal;
+
+  h5, h6 {
+    font-weight: normal;
   }
+
   button, span, input, h5 {
     font-size: 12px;
   }
+
   button {
     color: $secondary-color;
   }
+
+  button:hover {
+    background-color: #0c0f10;
+    border-color: $primary-color;
+  }
+
   hr {
     border-color: #323437;
   }
+
+  a {
+
+  }
+
   #logo {
     max-height: 125px;
   }
+
   #read_more {
+    i {
+      color: white;
+      transition-delay: 500ms;
+    }
+  }
+
+  #read_more:hover {
+    border-color: transparent;
+
+    span, i {
+      color: $primary-color;
+    }
+  }
+
+  #read_more_posts {
+    em {
+      color: $primary-color;
+    }
+    em::before, em::after {
+      content: "\f061";
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 900;
+      transition: 500ms;
+    }
+    em::after {
+      opacity: 0;
+    }
+  }
+
+  #read_more_posts:hover {
+    em {
+      color: white;
+    }
+    em::before {
+      color: $primary-color;
+      opacity: 0;
+    }
+    em::after {
+      color: $primary-color;
+      opacity: 1;
+    }
+  }
+
+  #author {
+    transform: translateY(-20px) translateX(20px);
+  }
+
+  .newsletter {
     i {
       color: white;
     }
   }
-  #read_more_posts {
-    i {
-      color: $primary-color;
+
+  .newsletter:hover {
+    background-color: $primary-color;
+  }
+
+  .image-button {
+    position: relative;
+    display: inline-block;
+
+    div {
+      background: $primary-color;
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+
+      i {
+        color: white;
+        font-size: 20px;
+      }
     }
   }
-  #author {
-    transform: translateY(-20px) translateX(20px);
+
+  .image-button:hover {
+    div {
+      opacity: 1;
+    }
   }
 }
 
@@ -468,6 +598,7 @@ footer {
   justify-content: center;
   color: $primary-color;
   font-size: 30px;
+
   i {
     color: $primary-color;
   }
@@ -478,10 +609,11 @@ footer {
     transition-delay: 500ms;
     color: $primary-color;
   }
+
   .round-icon {
     background-color: $primary-color;
-    //box-shadow: 0 0 0 10px $primary-color;
     animation: shadow-fade 500ms;
+
     i {
       color: white;
     }
@@ -501,6 +633,7 @@ footer {
   li {
     padding-bottom: 5px;
   }
+
   li:before {
     content: "\f061";
     font-family: 'Font Awesome\ 5 Free';
@@ -521,6 +654,7 @@ footer {
 .services-card {
   .round-icon {
     background-color: $active-color;
+
     i {
       color: white;
     }

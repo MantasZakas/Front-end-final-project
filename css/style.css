@@ -287,24 +287,67 @@ footer {
   background-color: #191e21;
   border: solid #323437;
   border-width: 1px 0; }
-  .background-almost-black h4, .background-almost-black h5, .background-almost-black span {
-    color: white; }
-  .background-almost-black h6 {
+  .background-almost-black h4, .background-almost-black h5, .background-almost-black span, .background-almost-black a {
+    color: white;
+    text-decoration: none; }
+  .background-almost-black h5, .background-almost-black h6 {
     font-weight: normal; }
   .background-almost-black button, .background-almost-black span, .background-almost-black input, .background-almost-black h5 {
     font-size: 12px; }
   .background-almost-black button {
     color: grey; }
+  .background-almost-black button:hover {
+    background-color: #0c0f10;
+    border-color: #1ccdca; }
   .background-almost-black hr {
     border-color: #323437; }
   .background-almost-black #logo {
     max-height: 125px; }
   .background-almost-black #read_more i {
-    color: white; }
-  .background-almost-black #read_more_posts i {
+    color: white;
+    transition-delay: 500ms; }
+  .background-almost-black #read_more:hover {
+    border-color: transparent; }
+    .background-almost-black #read_more:hover span, .background-almost-black #read_more:hover i {
+      color: #1ccdca; }
+  .background-almost-black #read_more_posts em {
     color: #1ccdca; }
+  .background-almost-black #read_more_posts em::before, .background-almost-black #read_more_posts em::after {
+    content: "\f061";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    transition: 500ms; }
+  .background-almost-black #read_more_posts em::after {
+    opacity: 0; }
+  .background-almost-black #read_more_posts:hover em {
+    color: white; }
+  .background-almost-black #read_more_posts:hover em::before {
+    color: #1ccdca;
+    opacity: 0; }
+  .background-almost-black #read_more_posts:hover em::after {
+    color: #1ccdca;
+    opacity: 1; }
   .background-almost-black #author {
     transform: translateY(-20px) translateX(20px); }
+  .background-almost-black .newsletter i {
+    color: white; }
+  .background-almost-black .newsletter:hover {
+    background-color: #1ccdca; }
+  .background-almost-black .image-button {
+    position: relative;
+    display: inline-block; }
+    .background-almost-black .image-button div {
+      background: #1ccdca;
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
+      .background-almost-black .image-button div i {
+        color: white;
+        font-size: 20px; }
+  .background-almost-black .image-button:hover div {
+    opacity: 1; }
 
 .round-icon {
   height: 70px;
