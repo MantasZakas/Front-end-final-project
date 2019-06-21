@@ -62,7 +62,7 @@ footer {
     color: grey; }
   footer a:hover {
     text-decoration: none;
-    color: unset; }
+    color: #1ccdca; }
   footer .colored:hover {
     color: #1ccdca; }
 
@@ -218,6 +218,32 @@ footer {
   height: 400px;
   border-top: solid white 1px; }
 
+#video_button {
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #video_button div {
+    background-color: #1ccdca;
+    position: absolute; }
+  #video_button img {
+    opacity: 0.7; }
+  #video_button #play_button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: #1ccdca;
+    position: absolute;
+    z-index: 1;
+    opacity: 1; }
+  #video_button #play_button:hover {
+    transform: rotate(120deg); }
+
+#video_button:hover img {
+  opacity: 0.4; }
+
 .fancy-line div {
   width: 200px;
   border-top: solid 1px lightgray; }
@@ -327,7 +353,12 @@ footer {
   .background-almost-black #read_more_posts:hover em::after {
     color: #1ccdca;
     opacity: 1; }
-  .background-almost-black #author {
+  .background-almost-black #author i:hover {
+    color: #1ccdca; }
+  .background-almost-black #author:hover h6 {
+    color: #1ccdca; }
+  .background-almost-black #author_image {
+    display: inline-block;
     transform: translateY(-20px) translateX(20px); }
   .background-almost-black .newsletter i {
     color: white; }
