@@ -54,7 +54,7 @@ $(function () {
             if (plans.hasOwnProperty(planNo)) {
                 let highlighted = '';
                 if (plans[planNo].highlight) highlighted = ' class="highlighted"'; //add highlighted class if needed
-                pricingPlansHtml += '<div class="col-md-4 col-12 mb-5"><table class="table table-bordered text-center">' +
+                pricingPlansHtml += '<div class="col-md-4 col-12 mb-5 mt-4"><table class="table table-bordered text-center">' +
                     '<tr><th' + highlighted + '><div class="hexagon">' +
                     '<h5>' + (plans[planNo]).price + '</h5>' +
                     '<h6>' + (plans[planNo]).period + '</h6></div>' +

@@ -276,12 +276,29 @@ footer {
   button {
     border-radius: 20px;
   }
+  button:hover {
+    background-color: #576162;
+
+    i {
+      color: white;
+    }
+  }
   h5, h6, span {
     color: $primary-color;
+    transition-delay: 300ms;
   }
   h6 {
     font-size: 10px;
     margin-bottom: 15px;
+  }
+  table:hover {
+    th {
+      background-color: $primary-color;
+    }
+    span {
+      color: white;
+
+    }
   }
 }
 
@@ -297,6 +314,10 @@ footer {
   i {
     color: white;
   }
+}
+
+#submit:hover {
+  background-color: #324545;
 }
 
 #google_map {
@@ -318,6 +339,29 @@ footer {
         color: $primary-color;
         transform: translateY(-15px) translateX(-9px);
       }
+      i.white-icon {
+        transform: translateY(-6px) translateX(0px);
+        background-color: white;
+      }
+      i.grey-icon {
+        transform: translateY(-11px) translateX(0px);
+        background-color: #f9fafc;
+        font-size: 20px;
+      }
+    }
+  }
+  .extra-long {
+    div {
+      width: 300px;
+    }
+  }
+}
+
+.fancy-line.extra-long {
+  div {
+    width: 300px;
+    div {
+      width: 30%;
     }
   }
 }
@@ -474,16 +518,25 @@ footer {
   opacity: 0;
 }
 
+.services-card {
+  .round-icon {
+    background-color: $active-color;
+    i {
+      color: white;
+    }
+  }
+}
+
+.services-card:hover {
+  h4 {
+    color: $primary-color;
+  }
+}
+
 .highlighted, .activated-plan { //TODO sort this out
   background-color: $primary-color;
   color: white;
 }
-
-//.round-icon-header:hover {
-//  h4 {
-//    color: $primary-color;
-//  }
-//}
 
 .colored {
   color: $primary-color;

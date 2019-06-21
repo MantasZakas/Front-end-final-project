@@ -182,12 +182,24 @@ footer {
 #pricing_plans_section button {
   border-radius: 20px; }
 
+#pricing_plans_section button:hover {
+  background-color: #576162; }
+  #pricing_plans_section button:hover i {
+    color: white; }
+
 #pricing_plans_section h5, #pricing_plans_section h6, #pricing_plans_section span {
-  color: #1ccdca; }
+  color: #1ccdca;
+  transition-delay: 300ms; }
 
 #pricing_plans_section h6 {
   font-size: 10px;
   margin-bottom: 15px; }
+
+#pricing_plans_section table:hover th {
+  background-color: #1ccdca; }
+
+#pricing_plans_section table:hover span {
+  color: white; }
 
 #shopping_cart:hover i {
   color: #1ccdca; }
@@ -197,6 +209,9 @@ footer {
   color: white; }
   #submit i {
     color: white; }
+
+#submit:hover {
+  background-color: #324545; }
 
 #google_map {
   width: 100%;
@@ -214,6 +229,21 @@ footer {
       font-size: 10px;
       color: #1ccdca;
       transform: translateY(-15px) translateX(-9px); }
+    .fancy-line div div i.white-icon {
+      transform: translateY(-6px) translateX(0px);
+      background-color: white; }
+    .fancy-line div div i.grey-icon {
+      transform: translateY(-11px) translateX(0px);
+      background-color: #f9fafc;
+      font-size: 20px; }
+
+.fancy-line .extra-long div {
+  width: 300px; }
+
+.fancy-line.extra-long div {
+  width: 300px; }
+  .fancy-line.extra-long div div {
+    width: 30%; }
 
 .fancy-line:hover div div {
   width: 75%; }
@@ -322,6 +352,14 @@ footer {
 
 .faded-out {
   opacity: 0; }
+
+.services-card .round-icon {
+  background-color: #19b8b5; }
+  .services-card .round-icon i {
+    color: white; }
+
+.services-card:hover h4 {
+  color: #1ccdca; }
 
 .highlighted, .activated-plan {
   background-color: #1ccdca;
