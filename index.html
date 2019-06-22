@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -248,7 +249,7 @@
 
 <!--BEGIN CAROUSEL-->
 <div class="container-fluid p-0">
-    <div id="slider1"><p>Optional slider is optional</p></div>
+    <div id="slider1"></div>
     <div id="title_banner">
         <div class="container text-center py-4">
             <h1 class="pb-2">BEST HTML5 THEME EVER!</h1>
@@ -493,7 +494,8 @@
                 </div>
                 <div id="accordion">
                     <div class="card my-1">
-                        <div class="card-header accordion-header py-1 border-bottom-0" data-toggle="collapse" href="#collapseOne">
+                        <div class="card-header accordion-header py-1 border-bottom-0" data-toggle="collapse"
+                             href="#collapseOne">
                             <a><i class="fas fa-user-alt"></i><b> CUSTOMER SERVICES 24/7</b></a>
                         </div>
                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -592,7 +594,7 @@
 
 <!--BEGIN CAROUSEL 2-->
 <div class="container-fluid background-grey">
-    <div id="slider2"><p>Optional slider is optional</p></div>
+    <div id="slider2"></div>
 </div>
 <!--END CAROUSEL 2-->
 
@@ -963,7 +965,7 @@
                                 </a>
                             </div>
                             <div class="col-7">
-                                <h6 class="py-2 pl-3 mb-0">JOHN DOE</h6>
+                                <a href="#"><h6 class="py-2 pl-3 mb-0">JOHN DOE</h6></a>
                                 <nav>
                                     <ul class="nav">
                                         <li class="nav-item">
@@ -1002,9 +1004,10 @@
                         <!--Modal window for video-->
                         <div class="modal fade" id="video_modal">
                             <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content border-0">
-                                    <!--TODO sort out the button-->
-                                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                                <div class="modal-content border-0 position-relative">
+                                    <button id="close-button" type="button" class="close position-absolute"
+                                            data-dismiss="modal">&times;
+                                    </button>
                                     <div class="modal-body p-0">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe width="560" height="315"

@@ -207,6 +207,14 @@ footer {
       background-color: inherit;
     }
   }
+
+  ul {
+    li:hover {
+      b {
+        color: $primary-color;
+      }
+    }
+  }
 }
 
 #slider1 {
@@ -359,19 +367,27 @@ footer {
   border-top: solid white 1px;
 }
 
+#newsletter:focus {
+  border-color: $primary-color;
+  box-shadow: none;
+}
+
 #video_button {
   border: none;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
   div {
     background-color: #1ccdca;
     position: absolute;
   }
+
   img {
     opacity: 0.7;
   }
+
   #play_button {
     width: 60px;
     height: 60px;
@@ -381,10 +397,12 @@ footer {
     z-index: 1;
     opacity: 1;
   }
+
   #play_button:hover {
     transform: rotate(120deg);
   }
 }
+
 #video_button:hover {
   img {
     opacity: 0.4;
@@ -555,12 +573,14 @@ footer {
     em {
       color: $primary-color;
     }
+
     em::before, em::after {
       content: "\f061";
       font-family: 'Font Awesome\ 5 Free';
       font-weight: 900;
       transition: 500ms;
     }
+
     em::after {
       opacity: 0;
     }
@@ -570,10 +590,12 @@ footer {
     em {
       color: white;
     }
+
     em::before {
       color: $primary-color;
       opacity: 0;
     }
+
     em::after {
       color: $primary-color;
       opacity: 1;
@@ -595,6 +617,13 @@ footer {
   #author_image {
     display: inline-block;
     transform: translateY(-20px) translateX(20px);
+  }
+
+  #close-button {
+    font-size: 30px;
+    top: -40px;
+    right: 0;
+    opacity: 0.8;
   }
 
   .newsletter {
