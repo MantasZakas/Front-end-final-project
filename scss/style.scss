@@ -409,6 +409,22 @@ footer {
   }
 }
 
+#go_to_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: $primary-color;
+  text-decoration: none;
+  transform: rotateX(90deg);
+  opacity: 0;
+  i {
+    color: white;
+    font-size: 25px;
+  }
+}
+
 .fancy-line {
   div {
     width: 200px;
@@ -487,6 +503,7 @@ footer {
 
 .tab-section-image {
   overflow: hidden;
+
   div {
     top: 50%;
     left: 50%;
@@ -501,6 +518,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1;
+
     i {
       position: absolute;
       color: white;
@@ -515,10 +533,12 @@ footer {
     height: 50px;
     width: 50px;
     opacity: 0.7;
+
     i {
       transform: rotate(90deg);
     }
   }
+
   img {
     transform: scale(1.2);
   }

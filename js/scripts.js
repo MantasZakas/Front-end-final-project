@@ -27,6 +27,7 @@ $(function () {
     Ajax(PROGRESSBARS, prepareProgressBars);
     Ajax(PRICINGPLANS, processPricingPlans);
     prepareCounterSection ();
+    window.addEventListener("scroll", displayGoToTop);
 
     /**
      *
@@ -196,6 +197,19 @@ $(function () {
             barTag.style.color = "#ffffff";
         }, 1000);
         //TODO progress percentage tag needs to be svg, percentage number needs to grow
+    }
+
+    function displayGoToTop() {
+        console.log(document.documentElement.scrollTop);
+        let topButton = document.getElementById("go_to_top");
+        console.log(topButton);
+        if (document.documentElement.scrollTop > 200) {
+            topButton.style.transform = ("rotateX(0deg)");
+            topButton.style.opacity = ("1");
+        } else {
+            topButton.style.transform = ("rotateX(90deg)");
+            topButton.style.opacity = ("0");
+        }
     }
 });
 
