@@ -88,26 +88,11 @@ $(function () {
         return visible
     }
 
-    // function displayOrListen (element, callback, boolean) { //does not work when boolean in global, which it needs to be
-    //     if (isElementVisible(element)) {
-    //         callback();
-    //     } else {
-    //         window.addEventListener("scroll", function () {
-    //             if (isElementVisible(element) && !boolean) {
-    //                 callback();
-    //             }
-    //         })
-    //     }
-    // }
-
     /**
-     *
+     * Ajax callback that takes external file data and checks page position
      * @param bars (array)
      */
     function prepareProgressBars(bars) {
-        // barsArray = bars["progress bars"];
-        // let barsDiv = document.getElementById("progress_bar_container");
-        // displayOrListen(barsDiv, loopProgressBars, progressLoopStarted);
         barsArray = bars["progress bars"];
         let barsDiv = document.getElementById("progress_bar_container");
         if (isElementVisible(barsDiv)) { //if element is in viewport, do the animation
@@ -136,7 +121,7 @@ $(function () {
     }
 
     /**
-     *
+     * Takes a number and shows it growing by 100 increments over 2 seconds
      * @param number (number)
      * @param element (DOM element)
      */

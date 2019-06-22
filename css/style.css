@@ -295,6 +295,38 @@ footer {
   font-weight: bold;
   border-top: solid #1ccdca !important; }
 
+.tab-section-image {
+  overflow: hidden; }
+  .tab-section-image div {
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #1ccdca;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; }
+    .tab-section-image div i {
+      position: absolute;
+      color: white;
+      font-size: 20px;
+      transition: 400ms; }
+
+.tab-section-image:hover div {
+  height: 50px;
+  width: 50px;
+  opacity: 0.7; }
+  .tab-section-image:hover div i {
+    transform: rotate(90deg); }
+
+.tab-section-image:hover img {
+  transform: scale(1.2); }
+
 .accordion-header {
   background-color: #1ccdca; }
   .accordion-header b, .accordion-header i {
