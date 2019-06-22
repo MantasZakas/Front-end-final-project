@@ -170,7 +170,6 @@ $(function () {
     }
 
     function processCounterSection () {
-        // TODO add the is visible thing
         counterLoopStarted = true;
         let countersDiv = document.getElementById("counter_section");
         let counterElements = countersDiv.getElementsByTagName("h2");

@@ -233,7 +233,6 @@ footer {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid white;
     background-color: #1ccdca;
     position: absolute;
     z-index: 1;
@@ -435,7 +434,7 @@ footer {
 .services-card:hover h4 {
   color: #1ccdca; }
 
-.highlighted, .activated-plan {
+.highlighted {
   background-color: #1ccdca;
   color: white; }
 

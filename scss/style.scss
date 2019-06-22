@@ -376,7 +376,6 @@ footer {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid white;
     background-color: $primary-color;
     position: absolute;
     z-index: 1;
@@ -713,7 +712,7 @@ footer {
   }
 }
 
-.highlighted, .activated-plan { //TODO sort this out
+.highlighted {
   background-color: $primary-color;
   color: white;
 }
