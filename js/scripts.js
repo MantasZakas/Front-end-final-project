@@ -26,7 +26,7 @@ $(function () {
 
     Ajax(PROGRESSBARS, prepareProgressBars);
     Ajax(PRICINGPLANS, processPricingPlans);
-    prepareCounterSection ();
+    prepareCounterSection();
     window.addEventListener("scroll", displayGoToTop);
     toggleDivOnClick("shopping_cart", "shopping_cart_div");
     toggleDivOnClick("search_small_screen", "search_div_small_screen");
@@ -131,6 +131,7 @@ $(function () {
     function growingNumber(number, element) {
         let shownNumber = 0;
         let j = 0;
+
         function grow() {
             setTimeout(function () {
                 element.innerHTML = Math.round(shownNumber).toString();
@@ -141,10 +142,11 @@ $(function () {
                 }
             }, 20)
         }
+
         grow();
     }
 
-    function prepareCounterSection () {
+    function prepareCounterSection() {
         let countersDiv = document.getElementById("counter_section");
         if (isElementVisible(countersDiv)) { //if element is in viewport, do the animation
             processCounterSection();
@@ -157,12 +159,13 @@ $(function () {
         }
     }
 
-    function processCounterSection () {
+    function processCounterSection() {
         counterLoopStarted = true;
         let countersDiv = document.getElementById("counter_section");
         let counterElements = countersDiv.getElementsByTagName("h2");
         let j = 0;
-        function counterLoop () {
+
+        function counterLoop() {
             setTimeout(function () {
                 counterElements[j].parentElement.style.opacity = "1";
                 growingNumber(countersArray[j], counterElements[j]);
@@ -172,6 +175,7 @@ $(function () {
                 }
             }, 500)
         }
+
         counterLoop();
     }
 
@@ -187,7 +191,7 @@ $(function () {
         barElement.style.width = bar.progress;
         let barPercentage = barElement.firstElementChild.lastElementChild;
         barPercentage.innerHTML = bar.progress;
-        setTimeout( function () {
+        setTimeout(function () {
             barPercentage.style.backgroundColor = "#ffffff";
         }, 500);
         let barTag = barElement.firstElementChild.firstElementChild;
@@ -198,7 +202,6 @@ $(function () {
             barTag.classList.remove("invisible");
             barTag.style.color = "#ffffff";
         }, 1000);
-        //TODO progress percentage tag needs to be svg, percentage number needs to grow
     }
 
     function displayGoToTop() {
@@ -220,7 +223,7 @@ $(function () {
      * @param divId (string)
      */
     function toggleDivOnClick(buttonId, divId) {
-        document.getElementById(buttonId).addEventListener("click", function() {
+        document.getElementById(buttonId).addEventListener("click", function () {
             document.getElementById(divId).classList.toggle("d-none");
         });
     }

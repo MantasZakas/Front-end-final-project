@@ -231,6 +231,22 @@ footer {
 #submit:hover {
   background-color: #324545; }
 
+#accordion [data-toggle="collapse"] .fa:before {
+  content: "\f068"; }
+
+#accordion [data-toggle="collapse"].collapsed .fa:before {
+  content: "\f067"; }
+
+#accordion .accordion-header {
+  background-color: #1ccdca; }
+  #accordion .accordion-header b, #accordion .accordion-header i {
+    color: white; }
+
+#accordion .accordion-header.collapsed {
+  background-color: unset; }
+  #accordion .accordion-header.collapsed b, #accordion .accordion-header.collapsed i {
+    color: unset; }
+
 #google_map {
   width: 100%;
   height: 400px;
@@ -355,16 +371,6 @@ footer {
 
 .tab-section-image:hover img {
   transform: scale(1.2); }
-
-.accordion-header {
-  background-color: #1ccdca; }
-  .accordion-header b, .accordion-header i {
-    color: white; }
-
-.accordion-header.collapsed {
-  background-color: unset; }
-  .accordion-header.collapsed b, .accordion-header.collapsed i {
-    color: unset; }
 
 .background-grey {
   background-color: #f9fafc;
