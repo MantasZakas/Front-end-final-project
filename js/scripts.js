@@ -28,10 +28,8 @@ $(function () {
     Ajax(PRICINGPLANS, processPricingPlans);
     prepareCounterSection ();
     window.addEventListener("scroll", displayGoToTop);
-    document.getElementById("shopping_cart").addEventListener("click", function() {
-        document.getElementById("shopping_cart_div").classList.toggle("d-none")
-        console.log("DSFESDGDWS0");
-    });
+    toggleDivOnClick("shopping_cart", "shopping_cart_div");
+    toggleDivOnClick("search_small_screen", "search_div_small_screen");
 
     /**
      *
@@ -215,9 +213,15 @@ $(function () {
             topButton.style.opacity = ("0");
         }
     }
-});
 
-//TODO add script to make dropdown not work on click, link below
-//https://stackoverflow.com/questions/42183672/how-to-implement-a-navbar-dropdown-hover-in-bootstrap-v4/42183824
-//TODO add transition to dropdown
-//TODO make custom social menu dropright
+    /**
+     *
+     * @param buttonId (string)
+     * @param divId (string)
+     */
+    function toggleDivOnClick(buttonId, divId) {
+        document.getElementById(buttonId).addEventListener("click", function() {
+            document.getElementById(divId).classList.toggle("d-none");
+        });
+    }
+});

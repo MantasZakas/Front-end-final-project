@@ -226,13 +226,12 @@
             </div>
             <!--search bar-->
             <form class="d-flex">
-                <div class="my-auto border d-lg-flex d-none d-lg-inline">
-                    <button class="my-auto d-none d-lg-inline" type="submit"><i class="fas fa-search"></i></button>
-                    <input class="border-0 d-none d-lg-inline w-75" name="search" placeholder="Search Here ...">
-                    <!--TODO add js to make search work on small screens-->
+                <div class="my-auto border d-md-flex d-none d-md-inline ml-3">
+                    <button class="my-auto d-none d-md-inline" type="submit"><i class="fas fa-search"></i></button>
+                    <input class="border-0 d-none d-md-inline w-75" name="search" placeholder="Search Here ...">
                 </div>
                 <button id="search_small_screen"
-                        class="small-round-button border rounded-circle ml-3 my-auto d-lg-none d-flex"
+                        class="small-round-button border rounded-circle ml-3 my-auto d-md-none d-flex"
                         type="button">
                     <i class="fas fa-search m-auto"></i>
                 </button>
@@ -255,6 +254,14 @@
                     <p id="price" class="my-auto">0 €</p>
                     <button class="btn" type="button">View Cart</button>
                 </div>
+            </div>
+            <div id="search_div_small_screen" class="d-none">
+                <form class="mb-2 d-flex justify-content-center">
+                    <div class="my-auto border d-flex d-inline ml-3">
+                        <button class="my-auto d-inline" type="submit"><i class="fas fa-search"></i></button>
+                        <input class="border-0 d-inline w-75" name="search" placeholder="Search Here ...">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -727,7 +734,6 @@
             </div>
         </div>
         <span class="colored"><i class="far fa-envelope colored my-5"></i> GET IN TOUCH</span>
-        <!--        TODO might need to use bootstrap class was-validated-->
         <form>
             <div class="row mb-md-4">
                 <div class="col-md-2 col-12 my-auto">
@@ -1089,7 +1095,6 @@
     <i class="fas fa-chevron-up"></i>
 </a>
 
-<!--TODO add button to go to the top of the page-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3eDQxZgH3A7Ra7gBM_SqXesiYDxgShzk&callback=googleMap"></script>
 
 </body>
