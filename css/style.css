@@ -116,6 +116,21 @@ footer {
 #main_nav ul li:hover b {
   color: #1ccdca; }
 
+#main_nav #shopping_cart_div {
+  width: 200px;
+  background-color: white;
+  float: right; }
+  #main_nav #shopping_cart_div h4 {
+    color: black;
+    font-weight: normal;
+    font-size: 12px; }
+  #main_nav #shopping_cart_div button {
+    background-color: #1ccdca;
+    color: white;
+    font-size: 12px; }
+  #main_nav #shopping_cart_div #price {
+    color: #1ccdca; }
+
 #slider1 {
   background-color: darkslategrey;
   color: white;

@@ -28,6 +28,10 @@ $(function () {
     Ajax(PRICINGPLANS, processPricingPlans);
     prepareCounterSection ();
     window.addEventListener("scroll", displayGoToTop);
+    document.getElementById("shopping_cart").addEventListener("click", function() {
+        document.getElementById("shopping_cart_div").classList.toggle("d-none")
+        console.log("DSFESDGDWS0");
+    });
 
     /**
      *

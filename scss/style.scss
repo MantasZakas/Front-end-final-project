@@ -215,6 +215,24 @@ footer {
       }
     }
   }
+  #shopping_cart_div {
+    width: 200px;
+    background-color: white;
+    float: right;
+    h4 {
+      color: black;
+      font-weight: normal;
+      font-size: 12px;
+    }
+    button {
+      background-color: $primary-color;
+      color: white;
+      font-size: 12px;
+    }
+    #price {
+      color: $primary-color;
+    }
+  }
 }
 
 #slider1 {
