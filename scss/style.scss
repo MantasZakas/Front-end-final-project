@@ -16,6 +16,11 @@ $progress-background: #2a3136;
     .dropdown-divider {
       border-color: #1a1f21;
     }
+
+    #link_navbar_small_screen { //display none does not work, because of bootstrap navbar-collapse
+      max-width:0;
+      overflow: hidden;
+    }
   }
 }
 

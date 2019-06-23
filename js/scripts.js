@@ -227,4 +227,10 @@ $(function () {
             document.getElementById(divId).classList.toggle("d-none");
         });
     }
+
+    function copyNavbar() {
+        document.getElementById("link_navbar_small_screen").innerHTML = document.getElementById("link_navbar").innerHTML
+    }
+
+    copyNavbar();
 });

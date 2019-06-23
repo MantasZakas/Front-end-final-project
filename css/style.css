@@ -4,7 +4,10 @@
     #main_nav .dropdown-menu a {
       color: lightgray; }
   #main_nav .dropdown-divider {
-    border-color: #1a1f21; } }
+    border-color: #1a1f21; }
+  #main_nav #link_navbar_small_screen {
+    max-width: 0;
+    overflow: hidden; } }
 
 * {
   color: grey;
