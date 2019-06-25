@@ -127,20 +127,22 @@ $(function () {
      * Takes a number and shows it growing by 100 increments over 2 seconds
      * @param number (number)
      * @param element (DOM element)
+     * @param duration (number) duration of a single iteration of 100
+     * @param string (string) additional text to be added at the end
      */
-    function growingNumber(number, element) {
+    function growingNumber(number, element, duration, string) {
         let shownNumber = 0;
         let j = 0;
 
         function grow() {
             setTimeout(function () {
-                element.innerHTML = Math.round(shownNumber).toString();
+                element.innerHTML = (Math.round(shownNumber).toString()) + string;
                 if (j < 100) {
                     shownNumber += number / 100;
                     j++;
                     grow()
                 }
-            }, 20)
+            }, duration)
         }
 
         grow();
@@ -168,7 +170,7 @@ $(function () {
         function counterLoop() {
             setTimeout(function () {
                 counterElements[j].parentElement.style.opacity = "1";
-                growingNumber(countersArray[j], counterElements[j]);
+                growingNumber(countersArray[j], counterElements[j], 20, "");
                 if (j < 4) {
                     j++;
                     counterLoop()
@@ -189,10 +191,11 @@ $(function () {
         );
         barElement.style.backgroundColor = bar.color;
         barElement.style.width = bar.progress;
-        let barPercentage = barElement.firstElementChild.lastElementChild;
-        barPercentage.innerHTML = bar.progress;
+        let barPercentage = barElement.firstElementChild.lastElementChild.lastElementChild;
         setTimeout(function () {
             barPercentage.style.backgroundColor = "#ffffff";
+            barPercentage.parentElement.firstElementChild.style.borderColor = "transparent #ffffff transparent transparent";
+            growingNumber(100, barPercentage, 10, "%");
         }, 500);
         let barTag = barElement.firstElementChild.firstElementChild;
         barTag.style.backgroundColor = bar.color;
@@ -205,9 +208,7 @@ $(function () {
     }
 
     function displayGoToTop() {
-        console.log(document.documentElement.scrollTop);
         let topButton = document.getElementById("go_to_top");
-        console.log(topButton);
         if (document.documentElement.scrollTop > 200) {
             topButton.style.transform = ("rotateX(0deg)");
             topButton.style.opacity = ("1");

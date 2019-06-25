@@ -599,6 +599,15 @@ footer {
   }
 }
 
+.little-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 5px 2.5px 0;
+  border-color: transparent transparent transparent transparent;
+  transition: 2000ms;
+}
+
 .background-grey {
   background-color: #f9fafc;
   border: solid #eaebed;
@@ -722,6 +731,10 @@ footer {
     top: -40px;
     right: 0;
     opacity: 0.8;
+  }
+
+  #close-button:hover {
+    background-color: transparent;
   }
 
   .newsletter {
