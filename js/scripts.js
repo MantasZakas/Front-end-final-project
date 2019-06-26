@@ -27,6 +27,7 @@ $(function () {
     Ajax(PROGRESSBARS, prepareProgressBars);
     Ajax(PRICINGPLANS, processPricingPlans);
     prepareCounterSection();
+    copyNavbar();
     window.addEventListener("scroll", displayGoToTop);
     toggleDivOnClick("shopping_cart", "shopping_cart_div");
     toggleDivOnClick("search_small_screen", "search_div_small_screen");
@@ -232,6 +233,4 @@ $(function () {
     function copyNavbar() {
         document.getElementById("link_navbar_small_screen").innerHTML = document.getElementById("link_navbar").innerHTML
     }
-
-    copyNavbar();
 });

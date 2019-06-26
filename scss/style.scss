@@ -18,7 +18,7 @@ $progress-background: #2a3136;
     }
 
     #link_navbar_small_screen { //display none does not work, because of bootstrap navbar-collapse
-      max-width:0;
+      max-width: 0;
       overflow: hidden;
     }
   }
@@ -651,10 +651,6 @@ footer {
 
   hr {
     border-color: #323437;
-  }
-
-  a {
-
   }
 
   #logo {
