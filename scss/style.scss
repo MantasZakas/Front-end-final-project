@@ -810,6 +810,10 @@ footer {
   transition-duration: 2000ms;
 }
 
+.moved-left {
+  transform: translateX(-100%);
+}
+
 .arrow-list {
   li {
     padding-bottom: 5px;
@@ -830,6 +834,7 @@ footer {
 
 .faded-out {
   opacity: 0;
+  transform: translateY(-50px);
 }
 
 .services-card {

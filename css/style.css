@@ -501,6 +501,9 @@ footer {
   color: #2a3136;
   transition-duration: 2000ms; }
 
+.moved-left {
+  transform: translateX(-100%); }
+
 .arrow-list li {
   padding-bottom: 5px; }
 
@@ -516,7 +519,8 @@ footer {
   padding: 3px; }
 
 .faded-out {
-  opacity: 0; }
+  opacity: 0;
+  transform: translateY(-50px); }
 
 .services-card .round-icon {
   background-color: #19b8b5; }

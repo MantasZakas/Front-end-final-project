@@ -170,7 +170,8 @@ $(function () {
 
         function counterLoop() {
             setTimeout(function () {
-                counterElements[j].parentElement.style.opacity = "1";
+                // counterElements[j].parentElement.style.opacity = "1";
+                counterElements[j].parentElement.classList.remove("faded-out");
                 growingNumber(countersArray[j], counterElements[j], 20, "");
                 if (j < 4) {
                     j++;
@@ -196,14 +197,13 @@ $(function () {
         setTimeout(function () {
             barPercentage.style.backgroundColor = "#ffffff";
             barPercentage.parentElement.firstElementChild.style.borderColor = "transparent #ffffff transparent transparent";
-            growingNumber(100, barPercentage, 10, "%");
+            growingNumber(parseInt(bar.progress), barPercentage, 10, "%");
         }, 500);
         let barTag = barElement.firstElementChild.firstElementChild;
-        barTag.style.backgroundColor = bar.color;
         setTimeout(function () {
             barTag.innerHTML = bar.name;
             barTag.classList.add("mx-3");
-            barTag.classList.remove("invisible");
+            barTag.classList.remove("moved-left");
             barTag.style.color = "#ffffff";
         }, 1000);
     }
