@@ -7,7 +7,7 @@ function googleMap() { //needs to be in global scope
         zoom: 18,
     };
     let map = new google.maps.Map(document.getElementById("google_map"), mapProp);
-    let marker = new google.maps.Marker({  //TODO change marker icon
+    let marker = new google.maps.Marker({
         position: (myLatLng),
         map: map,
     });
@@ -170,7 +170,6 @@ $(function () {
 
         function counterLoop() {
             setTimeout(function () {
-                // counterElements[j].parentElement.style.opacity = "1";
                 counterElements[j].parentElement.classList.remove("faded-out");
                 growingNumber(countersArray[j], counterElements[j], 20, "");
                 if (j < 4) {

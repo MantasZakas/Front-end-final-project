@@ -113,6 +113,10 @@ footer {
 .dropdown-item {
   color: white; }
 
+.form-control:focus {
+  border-color: #1ccdca;
+  box-shadow: none; }
+
 #main_nav .dropdown-menu .dropdown-item:hover {
   background-color: inherit; }
 

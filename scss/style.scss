@@ -204,6 +204,11 @@ footer {
   color: white;
 }
 
+.form-control:focus {
+  border-color: $primary-color;
+  box-shadow: none;
+}
+
 //Bootstrap modification End
 
 #main_nav {
